@@ -1,0 +1,28 @@
+h3{
+color: blue;
+}
+
+h1{
+    color: brown;
+    text-align: center;
+    background-color: yellow;
+}
+
+.caja{
+    padding: 20px;
+    background-color: red;
+}
+
+.div1{
+    padding: 10px;
+    background-color: aquamarine;
+    
+}
+
+.div2{
+    background-color: aqua;
+
+}
+.div3{
+    color: orange;
+}
