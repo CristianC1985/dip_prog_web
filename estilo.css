@@ -10,8 +10,18 @@ h1{
 
 .caja{
     padding: 20px;
-    background-color: red;
+    color: white;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 33%, rgba(2,171,228,1) 87%, rgba(0,212,255,1) 100%);
+box-shadow: 10px 10px 15px black;
+/*eje x - ene Y - blur - color */
+
+border-radius: 10px 20px 30px 40px;
+margin: 30px;
+height: 300px;
+width: 300px;
 }
+
 
 .div1{
     padding: 10px;
@@ -25,4 +35,5 @@ h1{
 }
 .div3{
     color: orange;
+    text-shadow: 10px -8px 3px #604C85;
 }
