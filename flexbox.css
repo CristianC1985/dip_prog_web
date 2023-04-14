@@ -1,0 +1,85 @@
+.caja {
+    background-color: aqua;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    height: 500px;
+    width: 500px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+
+.caja1 {
+    background-color: red;
+    height: 100px;
+    width: 150px;    
+    font-size: 30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caja2 {
+    background-color: rgb(225, 0, 255);
+    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 500px;
+    flex-direction:row-reverse;
+    justify-content: center;
+    align-items: center;
+    
+    
+   
+}
+
+
+
+.caja02 {
+    background-color: red;
+    height: 100px;
+    width: 150px;    
+    font-size: 30;   
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-color: black;
+   
+   
+   
+    
+}
+
+.caja3 {
+    background-color: rgb(0, 255, 34);
+    display: inline-flex;
+    display: flex;           
+    justify-content: space-between;
+    align-items: center;
+    
+    
+   
+}
+
+
+
+.caja03 {
+    background-color: rgb(65, 212, 231);
+    height: 100px;
+    width: 150px;    
+    font-size: 30;   
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-color: black;
+    border: white;
+   
+   
+   
+    
+}
+
+
