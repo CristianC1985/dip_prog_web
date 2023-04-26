@@ -1,0 +1,38 @@
+
+@media only screen and (max-width: 800px) {
+
+    #campo {
+        width: 800px;
+        background-color: aquamarine;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+    }
+    
+    h1 {
+        color: blue;
+    }
+    
+    div {
+        display: block;
+    }
+    
+    body {
+        color: black;
+        background-color: bisque;
+        font-size: 100%;
+    }
+
+    .animacion {
+        display: flex;
+        align-items: center;
+         justify-content: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: red;
+            animation-name: MiAnimacion;
+            animation-duration: 4s;  
+       }
+}
+
