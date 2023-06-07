@@ -37,23 +37,25 @@
 
         <h2>Comunicate con nosotros llenando el siguiente formulario</h2>
       <section class="form">
-        <form action="">
+        <form action="" method="" class="formulario">
           <p>
             <label for="">Nombre y apellido</label>
-            <input type="text" />
+            <input type="text" name=""/>
           </p>
 
           <p>
-            <label for="">Correo</label>
-            <input type="mail" />
-          </p>
-
-          <p>Mensaje</p>
-          <p>
-            <textarea name="Mensaje" id="1" cols="30" rows="10"></textarea>
+            <label for="">Email</label>
+            <input type="mail" name="" />
           </p>
           <p>
-            <input type="submit" value="Enviar" />
+            <label for="">Teléfono</label>
+            <input type="number">
+          </p>
+          <p>
+            <label for="mensaje">Mensaje</label>            
+            <textarea name="Mensaje"></textarea>
+          </p>
+          <p class="acciones"><input type="submit" value="Enviar" />
           </p>
         </form>
       </section>
