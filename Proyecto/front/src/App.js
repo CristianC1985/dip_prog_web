@@ -1,15 +1,15 @@
 
-//import './App.css';
+import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Header from '../src/componentes/layout/Header';
 import Nav from '../src/componentes/layout/Nav';
 import Footer from '../src/componentes/layout/Footer';
 
-import contactoPage from '../pages/ContactoPage';
-import HomePage from '../pages/HomePage';
-import NosotrosPage from '../pages/NosotrosPage';
-import NovedadesPage from '../pages/NovedadesPage';
+import ContactoPage from './pages/ContactoPage';
+import HomePage from './pages/HomePage';
+import NosotrosPage from './pages/NosotrosPage';
+import NovedadesPage from './pages/NovedadesPage';
 
 function App() {
   return (

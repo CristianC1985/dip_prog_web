@@ -9,7 +9,7 @@ const Header = (props) => {
 
       <h1>Titulo</h1>
       <p>Lorem ipsum</p>
-      <Nav />
+      
     </>
   );
 };
