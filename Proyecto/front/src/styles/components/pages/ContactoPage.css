@@ -7,3 +7,48 @@
 .contacto div {
     width: 100%;
 }
+
+.formulario p label {
+    min-width: 100px;  
+    display: flex;
+    align-items: center;
+  }
+  
+  .formulario p input, 
+  .formulario p textarea {
+    width: 30%;
+  }
+  
+  .formulario p input,
+  .formulario p textarea {
+    background-color: white;
+    border-radius: 5px;
+    border: 1p solid #999;
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  
+  .formulario textarea {
+    resize: none;
+    height: 150px;
+  }
+  
+  .formulario p:nth-child(4) {
+    align-items: start;
+  }
+  
+  .formulario input [type="submit"] {
+    background: #6da9ed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 5rem;
+    cursor: pointer;
+  }
+  
+  .formulario input [type="submit"]:hover {
+    background-color: #2e64a1;
+  }
