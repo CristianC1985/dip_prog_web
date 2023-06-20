@@ -7,8 +7,11 @@ const Header = (props) => {
     <>
       
 
-      <h1>Titulo</h1>
-      <p>Lorem ipsum</p>
+      <header>
+      <div>
+        <h1>Fusión Peluquería</h1>
+      </div>
+    </header>
       
     </>
   );

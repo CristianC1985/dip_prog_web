@@ -3,7 +3,11 @@ import '../../styles/components/layout/Footer.css';
 
 const Footer = (props) => {
     return (
-        <div>Footer</div>
+        <footer>
+
+        <p>Diseñado por Cristian Coronel - 2023</p>
+
+    </footer>
     );
 }
 export default Footer;
