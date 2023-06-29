@@ -6,21 +6,21 @@ const HomePage = (props) => {
     <body>   
 
     <main>
-      <div class="imagenes">
-        <div class="img">
-          <img src="" alt="balayage" />
+      <div>
+        <div>
+          <img src="images/balayage.jpg" alt="balayage" />
         </div>
 
-        <div class="img1">
-          <img src="img/peinado.jpg" alt="peinado" />
+        <div>
+          <img src="images/peinado.jpg" alt="peinado" />
         </div>
 
-        <div class="img2">
-          <img src="img/corte.jpg" alt="corte" />
+        <div>
+          <img src="images/corte.jpg" alt="corte" />
         </div>
       </div>
 
-      <div class="quienes">
+      <div>
         <div class="info">
           <h4>Quienes somos?</h4>
           <p>
@@ -37,7 +37,7 @@ const HomePage = (props) => {
             temporibus ducimus cum sequi voluptatem dignissimos, expedita unde!
           </p>
         </div>
-        <img src="img/cortemujer.jpeg" alt="puntas" />
+        <img src="images/cortemujer.jpeg" alt="puntas" />
       </div>
 
       <h2>Nuestros Servicios</h2>
@@ -45,27 +45,27 @@ const HomePage = (props) => {
       <section>
         <div class="divserv">
           <h3>Lavado</h3>
-          <img class="servdos" src="img/lavadocabello.jpeg" alt="" />
+          <img  src="images/lavadocabello.jpeg" alt="" />
         </div>
         <div class="divserv">
           <h3>Corte</h3>
 
-          <img class="servdos" src="img/cortecabello.jpeg" alt="" />
+          <img src="images/cortecabello.jpeg" alt="" />
         </div>
-        <div class="divserv">
+        <div>
           <h3>Color</h3>
 
-          <img class="servdos" src="img/color.jpg" alt="" />
+          <img  src="images/color.jpg" alt="" />
         </div>
-        <div class="divserv">
+        <div>
           <h3>Peinados</h3>
 
-          <img class="servdos" src="img/peinados.jpeg" alt="" />
+          <img src="images/peinados.jpeg" alt="" />
         </div>
-        <div class="divserv">
+        <div>
           <h3>Manicuría</h3>
 
-          <img class="servdos" src="img/manicuria.jpg" alt="" />
+          <img src="images/manicuria.jpg" alt="" />
         </div>
       </section>
     </main>
