@@ -1,0 +1,32 @@
+.servicio {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    gap: 32p;
+    align-items: center;
+  }
+  
+  .servicio .info h4 {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 1px solid #2e2e2e;
+    padding-bottom: 10px;
+  }
+  
+  .servicio .info p {
+    font-size: 13px;
+  }
+  
+  .servicio img {
+    border-radius: 13px;
+    display: block;
+    max-width: 225px;
+  }
+  
+  .servicio:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  

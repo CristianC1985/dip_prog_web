@@ -8,7 +8,7 @@ const HomePage = (props) => {
     <main>
       <div class="imagenes">
         <div class="img">
-          <img src="/public/images/balayage.jpg" alt="balayage" />
+          <img src="" alt="balayage" />
         </div>
 
         <div class="img1">
