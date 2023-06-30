@@ -27,6 +27,10 @@ app.get('/prueba', function(req, res){
 app.get('/destacados', function (req, res) {
     res.send('Hola soy la pagina destacados');
   })
+
+app.get('/ingreso', function (req, res) {
+    res.send('Hola soy la pagina ingreso');
+  })
 app.use('/admin/login', loginRouter);
 
 // catch 404 and forward to error handler
