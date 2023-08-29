@@ -91,25 +91,26 @@ nav ul li a.activo {
 /* servicios */
 
 .servicio {
-  border: 1px solid #ccc;
+  
   border-radius: 10px;
   padding: 16px;
   margin: 16px 0;
   display: flex;
   gap: 32p;
   align-items: center;
+  background-color: black;
 }
 
 .servicio .info h4 {
-  color: rgb(0, 0, 0);
+  color:white;
   font-weight: 500;
-  font-style: italic;
-  border-bottom: 1px solid #2e2e2e;
+  font-style: italic; 
   padding-bottom: 10px;
 }
 
 .servicio .info p {
   font-size: 13px;
+  color: white;
 }
 
 .servicio img {
@@ -128,12 +129,19 @@ nav ul li a.activo {
   margin: 16px 0;
   display: flex;
   flex-direction: column;
+ 
 }
 
+.imgquienes{
+  height: 50px;
+  width: 50px;
+  padding: 50px;
+  margin: 50px;
+}
 .info {
   font-weight: 500;
   font-style: italic;
-  border-bottom: 1px solid #2e2e2e;
+  border-bottom: 2px solid #2e2e2e;
   padding-bottom: 10px;
 }
 
@@ -145,13 +153,22 @@ h2 {
   margin: 100px 100px;
 }
 .divserv {
-  background-color: rgb(0, 0, 0);
-  height: 100%;
-  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0;
+  display: flex;
+  gap: 32p;
+  align-items: center;
+  background-color: black;
+  border-radius: 13px;
+  display: block;
+  max-width: 225px;
+  }
   
 
   
-}
+
 
 .divdos {
   background-color: aquamarine;
@@ -160,10 +177,8 @@ h2 {
  
 }
 
-.servdos{
-  width: 300px;
-  height: 300px;
-  margin: 15px;
+.fondoservicios{
+  background-color: black;
 }
 h3 {
     color: white;
@@ -180,10 +195,6 @@ section {
 
 /*Contacto*/
 
-.formulario p {
-  
-  
-}
 
 .formulario p label {
   min-width: 100px;  

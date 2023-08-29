@@ -4,9 +4,13 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+require('dotenv').config();
+var pool = require('./models/db');
+
 var session = require('express-session');
 
 var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
 
 
 var app = express();
@@ -27,6 +31,10 @@ app.use(session({
   saveUninitialized: true
 
 }));
+
+pool.query("select * from empleados").then(function(resultados) {
+  console.log(resultados)
+  });
 
 //app.use('/', indexRouter);
 //app.use('/users', usersRouter);

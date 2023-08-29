@@ -9,7 +9,8 @@ var pool = require('./models/db');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var loginRouter = require('./routes/admin/login')
+var loginRouter = require('./routes/admin/login');
+var adminRouter = require('./routes/admin/novedades');
 
 var app = express();
 
@@ -26,8 +27,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
+app.use('/admin/novedades', adminRouter);
 //consultas
-pool.query('select * from empleados').then(function(resultados) {
+var pool = require('./models/db')
+pool.query("select * from empleados").then(function(resultados) {
   console.log(resultados)
 });
 
