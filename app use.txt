@@ -1,0 +1,8 @@
+app.use(
+  session({
+    secret: "PW2021awqyeudj",
+    cookie: { maxAge: null },
+    resave: false,
+    saveUninitialized: true,
+  })
+);
