@@ -1,7 +1,11 @@
 import React from 'react';
+import '../styles/components/pages/HomePage.css';
+import '../styles/components/pages/NosotrosPage.css';
 
 const NosotrosPage = (props) => {
     return (
+
+        
         <main>
 
         <h2>

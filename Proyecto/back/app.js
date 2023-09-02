@@ -3,8 +3,8 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
-var fileUpload = require('express-fileupload')
-var cors = require ('cors');
+var fileUpload = require('express-fileupload');
+var cors = require('cors');
 
 require("dotenv").config();
 var session = require('express-session');
@@ -14,7 +14,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/novedades');
-var apiRouter = require ('./routes/api');
+var apiRouter = require('./routes/api');
 
 var app = express();
 

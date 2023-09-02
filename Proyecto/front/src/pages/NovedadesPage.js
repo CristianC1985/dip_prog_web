@@ -1,129 +1,37 @@
 import React from 'react';
+import  { useState, useEffect } from 'react';
+import axios from 'axios';
+import '../styles/components/pages/HomePage.css';
+import NovedadItem from '../componentes/novedades/NovedadItem';
 
 const NovedadesPage = (props) => {
+    const [loading, setLoading] = useState(false);
+    const [novedades, setNovedades] = useState([]);
+    useEffect(() => {
+        const cargaNovedades = async () => {
+            setLoading(true);
+            const response = await axios.get('http://localhost:3000/api/novedades');
+            setNovedades(response.data);
+            setLoading(false);
+        };
+
+        cargaNovedades();
+    }, []);
     return (
-        <main>
+        <section className='holder'>
+            <h2>Novedades</h2>
+            {
+                loading ? (
+                    <p>Cargando...</p>
+                ) : (
+                    novedades.map(item => <NovedadItem key={item.id}
+                        title={item.titulo} subtitle={item.subtitulo}
+                        imagen={item.imagen} body={item.cuerpo} />)
+                )
+            }
 
-        <h2>Servicios</h2>
-        <div class="servicio">
-            
-            <div class="info">
-                <h4> Corte </h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum veritatis corporis aut consequatur eaque
-                    aliquam nam libero expedita dicta, similique perferendis, magnam aspernatur a vero deserunt eos at
-                    id? Quasi blanditiis nesciunt, libero eos, quam odit autem alias nihil quae beatae hic ratione quas
-                    explicabo repudiandae! Voluptas perspiciatis atque sequi laudantium. Voluptas nihil nesciunt soluta
-                    id nulla ipsam facilis pariatur, fuga autem temporibus sapiente eius voluptate officiis cum corporis
-                    mollitia animi dolor voluptates, tenetur dolore cupiditate illo quia. Ratione alias sit in nisi
-                    eaque laudantium consectetur eos quis error, maiores culpa numquam temporibus ducimus cum sequi
-                    voluptatem dignissimos, expedita unde!
-
-                </p>
-
-            </div>
-
-
-
-        </div>
-        <div class="servicio">
-            
-            <div class="info">
-                <h4> Lavado </h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum veritatis corporis aut consequatur eaque
-                    aliquam nam libero expedita dicta, similique perferendis, magnam aspernatur a vero deserunt eos at
-                    id? Quasi blanditiis nesciunt, libero eos, quam odit autem alias nihil quae beatae hic ratione quas
-                    explicabo repudiandae! Voluptas perspiciatis atque sequi laudantium. Voluptas nihil nesciunt soluta
-                    id nulla ipsam facilis pariatur, fuga autem temporibus sapiente eius voluptate officiis cum corporis
-                    mollitia animi dolor voluptates, tenetur dolore cupiditate illo quia. Ratione alias sit in nisi
-                    eaque laudantium consectetur eos quis error, maiores culpa numquam temporibus ducimus cum sequi
-                    voluptatem dignissimos, expedita unde!
-
-                </p>
-
-            </div>
-
-
-
-        </div>
-
-        <div class="servicio">
-            
-            <div class="info">
-                <h4> Peinados </h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum veritatis corporis aut consequatur eaque
-                    aliquam nam libero expedita dicta, similique perferendis, magnam aspernatur a vero deserunt eos at
-                    id? Quasi blanditiis nesciunt, libero eos, quam odit autem alias nihil quae beatae hic ratione quas
-                    explicabo repudiandae! Voluptas perspiciatis atque sequi laudantium. Voluptas nihil nesciunt soluta
-                    id nulla ipsam facilis pariatur, fuga autem temporibus sapiente eius voluptate officiis cum corporis
-                    mollitia animi dolor voluptates, tenetur dolore cupiditate illo quia. Ratione alias sit in nisi
-                    eaque laudantium consectetur eos quis error, maiores culpa numquam temporibus ducimus cum sequi
-                    voluptatem dignissimos, expedita unde!
-
-                </p>
-
-            </div>
-
-
-
-        </div>
-        <div class="servicio">
-            
-            <div class="info">
-                <h4> Coloración </h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum veritatis corporis aut consequatur eaque
-                    aliquam nam libero expedita dicta, similique perferendis, magnam aspernatur a vero deserunt eos at
-                    id? Quasi blanditiis nesciunt, libero eos, quam odit autem alias nihil quae beatae hic ratione quas
-                    explicabo repudiandae! Voluptas perspiciatis atque sequi laudantium. Voluptas nihil nesciunt soluta
-                    id nulla ipsam facilis pariatur, fuga autem temporibus sapiente eius voluptate officiis cum corporis
-                    mollitia animi dolor voluptates, tenetur dolore cupiditate illo quia. Ratione alias sit in nisi
-                    eaque laudantium consectetur eos quis error, maiores culpa numquam temporibus ducimus cum sequi
-                    voluptatem dignissimos, expedita unde!
-
-                </p>
-
-            </div>
-
-
-
-        </div>
-
-        <div class="servicio">
-            
-            <div class="info">
-                <h4> Manicuria </h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum veritatis corporis aut consequatur eaque
-                    aliquam nam libero expedita dicta, similique perferendis, magnam aspernatur a vero deserunt eos at
-                    id? Quasi blanditiis nesciunt, libero eos, quam odit autem alias nihil quae beatae hic ratione quas
-                    explicabo repudiandae! Voluptas perspiciatis atque sequi laudantium. Voluptas nihil nesciunt soluta
-                    id nulla ipsam facilis pariatur, fuga autem temporibus sapiente eius voluptate officiis cum corporis
-                    mollitia animi dolor voluptates, tenetur dolore cupiditate illo quia. Ratione alias sit in nisi
-                    eaque laudantium consectetur eos quis error, maiores culpa numquam temporibus ducimus cum sequi
-                    voluptatem dignissimos, expedita unde!
-
-                </p>
-
-            </div>
-
-
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </main>
-
+        </section>
+      
     );
 }
 
