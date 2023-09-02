@@ -9,13 +9,13 @@ import ContactoPage from './pages/ContactoPage';
 import HomePage from './pages/HomePage';
 import NosotrosPage from './pages/NosotrosPage';
 import NovedadesPage from './pages/NovedadesPage';
-import ServiciosPage from './pages/ServiciosPage';
+
 
 function App() {
   return (
     <div className="App">
       
-      <Header><Header/>
+      
       <BrowserRouter>
       <Nav />
       <Routes>
